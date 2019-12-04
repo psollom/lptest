@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Window Close Test</title>
+<script type="text/javascript" src="leTrainingLiveEngageTag.js"></script>
+<script type="text/javascript">
+lpTag.events.bind("lpUnifiedWindow", "windowClosed", (e,n) => console.log("================ windowClosed event fired =============="));
+lpTag.events.bind("lpUnifiedWindow", "*", (e,n) => console.log(e,n));
+</script>
+<style>
+h1, h3 {
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+  <h1>Window Close Test</h1>
+  <h1>Following button is for a messaging conversation.</h1>
+  <div id="idMessagingWindowCloseTest"></div>
+  <h1>The following button is for a chat conversation.</h1>
+  <div id="idChatWindowClosedTest"></div>
+</body>
+  
+</html>
