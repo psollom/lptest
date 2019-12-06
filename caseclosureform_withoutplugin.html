@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Case Closure comment Template</h2>
+
+<form id="closureform" action="/action_page.php">
+<input type="reset" form="closureform" value="Refresh new template"><br><br>
+  Summary of issue: <i>(1-3 lines explaining the customer's issue)</i><br>
+  <input type="text" form="closureform" name="summary" style="height:100px;width:600px;" value="">
+  <br><br>
+  Resolution: <i>(resolution type and action)</i><br>
+  <input type="text" form="closureform" name="resolution"style="height:100px;width:600px;"  value="">
+  <br><br>
+  Troubleshooting steps: <i>(summary of how reached the resolution)</i><br>
+  <input type="textarea" form="closureform" name="troubleshootsteps"style="height:100px;width:600px;">
+  <br><br>
+  Related bugs: <i>(if found related bugs and their status)</i><br>
+  <input type="text" form="closureform" name="relatedbugs" value="none">
+  <br><br>
+  Is umbrella case? <i>(Yes / No)</i> + Is linked to umbrella case <i>(Yes / No)</i><br>
+  <select id="options" form="closureform" name="umbrellacase" value="opt-1">
+          <option value="opt-1">No</option>
+          <option value="opt-2">Yes</option>
+        </select>
+  <br><br>
+  Customer confirmed the resolution? <i>(if so, how?)</i><br>
+  <select id="options" form="closureform" name="custconfirmedres" value="opt-1">
+          <option value="opt-1">Yes, via email</option>
+          <option value="opt-2">Yes, on phone call</option>
+          <option value="opt-3">Yes, in person</option>
+          <option value="opt-4">No</option>
+        </select>
+<br><br>
+  Additional comments: <i>(resolution type and action)</i><br>
+  <input type="text" form="closureform" name="comments" style="height:100px;width:600px;" value="None">
+  <br><br><br>
+
+  <input type="submit" form="closureform" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
